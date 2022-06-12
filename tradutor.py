@@ -10,7 +10,6 @@ s.configure("prin.TFrame", borderwidth=5,relief="raised", background="black")
 def traducao(*args):
     translator = Translator()
     
-    
     if op == "en" or "pt" or "es":
         text.delete("1.0", "end")
         tr = translator.translate(textvar.get(), dest=op.get())
